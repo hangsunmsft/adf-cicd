@@ -1,0 +1,24 @@
+{
+	"name": "trigger4",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline2",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/container1/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/f4e3411e-160f-4920-935b-93fc8b038acc/resourceGroups/hs-rg-wus/providers/Microsoft.Storage/storageAccounts/hsadlsgen2wus",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"name": "trigger5",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline2",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "CustomEventsTrigger",
+		"typeProperties": {
+			"subjectEndsWith": "",
+			"subjectBeginsWith": "",
+			"scope": "/subscriptions/f4e3411e-160f-4920-935b-93fc8b038acc/resourceGroups/hs-rg-wus/providers/Microsoft.EventGrid/topics/hseg",
+			"events": [
+				"event1"
+			]
+		}
+	}
+}

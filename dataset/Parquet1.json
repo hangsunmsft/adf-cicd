@@ -1,0 +1,37 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "part-00000-1640975c-2ed5-4637-b1e5-a7301823cd9e-c000.snappy.parquet",
+				"folderPath": "student",
+				"fileSystem": "container1"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "INT32"
+			},
+			{
+				"name": "name",
+				"type": "UTF8"
+			},
+			{
+				"name": "grade",
+				"type": "DECIMAL",
+				"precision": 23,
+				"scale": 0
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
